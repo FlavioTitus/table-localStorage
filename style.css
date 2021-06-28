@@ -1,0 +1,119 @@
+/* ---------- Input Styles ---------- */
+
+:root{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    --focus-hover-color: rgb(46,216,202);
+    --bck-gray: rgb(220,220,220);
+    --middle-gray: rgb(131, 131, 131);
+    --dark-gray: rgb(30,30,30);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.entradas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5vh 0 5vh 5vh;
+    align-items: flex-end;
+}
+
+.entradas > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.label-entradas{
+    margin-bottom: 1vh;
+    font-weight: 600;
+}
+
+.desc{
+    /* border: none;
+    outline: 0; */
+    border: solid 4px var(--focus-hover-color);
+    background-color: var(--bck-gray);
+    padding: 1vw;
+    width: 45vw;
+    height: 5vh;
+    font-size: large;
+}
+
+
+.desc:focus{
+    border: none;
+    outline: 0;
+    /* border: solid 4px var(--focus-hover-color); */
+}
+
+.tipos {
+    -webkit-appearance: none;
+    background: url(./img/angle-down-solid.svg) no-repeat var(--bck-gray);
+    background-position: 15vw center;
+    background-size: 20px;
+    border: solid 4px var(--focus-hover-color);
+    padding: 1vw;
+    /* outline: 0;
+    border: none; */
+    width: 18vw;
+    height: 5vh;
+}
+
+.tipos:focus{
+    /* border: solid 4px var(--focus-hover-color); */
+    outline: 0;
+    border: none;
+    -webkit-appearance: none;
+    background: url(./img/angle-up-solid.svg) no-repeat var(--bck-gray);
+    background-position: 15vw center;
+    background-size: 20px;
+}
+
+.btn {
+    color: #fff;
+    background-color: rgb(36, 36, 35);
+    border: 0;
+    font-weight: bold;
+    border-radius: 0.7vw;
+    width: 15vw;
+    height: 5vh;
+}
+
+.btn:hover{
+    background-color: var(--middle-gray);
+    color: var(--focus-hover-color);
+}
+
+/* ---------- Table Styles ---------- */
+
+.table{
+    margin-top: 5vh;
+    margin-left: 9vw;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.table th{
+    border-bottom: solid 2px #000;
+}
+
+td, th {
+    padding: 0.7rem;
+    width: 52%;
+}

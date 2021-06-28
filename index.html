@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Despesas</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="entradas">
+            
+            <div>
+                <label for="desc" class="label-entradas" >Descrição da Despesa</label>
+                <input type="text" name="desc" class="desc" maxlength="60" >
+            </div>
+
+            <div class="estilo">
+                <label for="tipos" class="label-entradas">Tipo</label>
+                <select name="tipos" class="tipos" id="tipos">
+                    <optgroup class="grupo">
+                        <option value="escolha"></option>
+                        <option value="Lazer">Lazer</option>
+                        <option value="Gastos Recorrentes">Gastos Recorrentes</option>
+                        <option value="Contas">Contas</option>
+                        <option value="Alimentação">Alimentação</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <div>
+                <button type="button" class="btn"> REGISTRAR</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="table" style="display: none;" >
+        <table >
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+            </tbody>
+        </table>
+    </div>
+        
+    <script src="./script.js"></script>
+</body>
+</html>
